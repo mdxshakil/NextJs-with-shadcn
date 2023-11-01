@@ -6,11 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "server":"json-server --watch ./_data/db.json --port 4000"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "json-server": "^0.17.4",
     "lucide-react": "^0.291.0",
     "next": "14.0.1",
     "react": "^18",
