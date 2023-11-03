@@ -21,6 +21,8 @@ interface Recipe {
 
 async function getRecipies() {
   const result = await fetch("http://localhost:4000/recipes");
+  //simulate a delay
+  await new Promise((resolve) => setTimeout(resolve, 3000));
   return result.json();
 }
 
